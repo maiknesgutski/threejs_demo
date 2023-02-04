@@ -1,6 +1,7 @@
 import './style.css'
 import javascriptLogo from './javascript.svg'
 import { setupCounter } from './counter.js'
+import { cubeAnimation } from './cube.js';
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -17,7 +18,9 @@ document.querySelector('#app').innerHTML = `
     <p class="read-the-docs">
       Click on the Vite logo to learn more
     </p>
+    <canvas id="scene"></canvas>
   </div>
 `
 
-setupCounter(document.querySelector('#counter'))
+setupCounter(document.querySelector('#counter'));
+cubeAnimation(document.getElementById('scene'));
