@@ -11,7 +11,7 @@ Nach der Einrichtung ist das Projekt unter der URL: <http://localhost:9595> aufz
 ## Setup
 
 Klont euch das Repository: <https://github.com/maiknesgutski/threejs_demo>
-Klonen über ssh: <git@github.com:maiknesgutski/threejs_demo.git>
+Klonen über ssh: git@github.com:maiknesgutski/threejs_demo.git
 Klonen über https: <https://github.com/maiknesgutski/threejs_demo.git>
 
 Für die Inbetriebname des Projektes muss zuerst das Docker-Image erstellt werden. Dies kann mit folgendem Befehl gemacht werden:
