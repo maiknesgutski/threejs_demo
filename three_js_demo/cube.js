@@ -1,5 +1,9 @@
 import * as THREE from 'three';
 
+/**
+ * 
+ * @param {HTMLCanvasElement} canvas 
+ */
 export function cubeAnimation(canvas) {
 
     const scene = new THREE.Scene();
