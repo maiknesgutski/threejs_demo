@@ -11,23 +11,20 @@ export function cubeAnimation(canvas) {
 
     const renderer = new THREE.WebGLRenderer(
         {
-            "canvas": canvas
+            "canvas": canvas,
         }
     );
 
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.body.appendChild(renderer.domElement);
 
-    const geometry = new THREE.BoxGeometry(1, 1, 1);
+    const geometry = new THREE.BoxGeometry(2, 1, 1);
     const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
     const cube = new THREE.Mesh(geometry, material);
     scene.add(cube);
 
-    const ambientLight = new THREE.AmbientLight(0x0fff00, 50);
-
-    scene.add(ambientLight)
-
     camera.position.z = 5;
+
 
     function animate() {
         requestAnimationFrame(animate);
